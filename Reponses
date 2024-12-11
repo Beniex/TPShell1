@@ -81,3 +81,7 @@ option dans le ls -la pour afficher les numeros de inoeud
 1.2.3 on a pas les droits admin et l'utilisateur
 1.2.4
 
+notes en plus : si on a un lien symbolique vers un fichier, si on fait n'importe quelle action hors rm, ce soont les droits du fichier qui est pointé 
+donc les droits du fichier de lien symbolique sont 777 et ne sont jamais utilisés. soit on rm le lien symbolique et ce sont les droits du repo contenant le lien ou ce sont les 
+droits du fichier cible du lien. si on fait un chmod sur le lien on modifie le sdroist du ficheir cible. 
+
