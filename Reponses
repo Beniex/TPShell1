@@ -1,0 +1,83 @@
+1.1 Droits d'accès
+1.1.1 Le droit en lecture ne sert qu'à la lecture donc le ls ne fonctionne pas mais si on connait le contenu, on peut s'en servir
+mkdir demo
+chmod 377 demo
+cd demo
+ls
+--->>>>> message d'erreur
+1.1.2 le droit en écriture permet la création et la destruction des fichiers dans le repo meme si on a les droits sur le fichier
+mkdir demo
+cd demo
+chmod 500 demo
+touch a.txt
+-->>> permision non accordée
+
+1.1.3
+il faut que j'ai les droits en x sur tous les repo de la chaine /a/b/c/d
+mkdir a
+chmod 700 a
+mkdir a/b
+chmod 600 b
+mkdir a/b/c
+--->>>>> permission non accordée
+1.1.7
+on met un sticky bit sur un repo qui a ou non un droit en x
+s'il y a déjà un x, le sticky sera t si pas de x, sticky bit sera T
+chmod 1776 TMP
+ll
+--->>>> il y a T sur TMP
+chmod 1777 TMP
+ll
+---->>>>> il y a t sur TMP
+ POST SCRIPTUM : pour copier un fichier, il faut le droit de lecture du fichier et droit d'écriture dans le repo
+
+
+1.2 Liens
+1.2.1
+1.2.2 ex2 et exemple sont le meme fichier sur le disque car ils ont les memes caractéri
+stiques
+option dans le ls -la pour afficher les numeros de inoeud
+
+1.1 Droits d'accès
+1.1.1 Le droit en lecture ne sert qu'à la lecture donc le ls ne fonctionne pas mais si on connait le contenu, on peut s'en servir
+mkdir demo
+chmod 377 demo
+cd demo
+ls
+--->>>>> message d'erreur
+1.1.2 le droit en écriture permet la création et la destruction des fichiers dans le repo meme si on a les droits sur le fichier
+mkdir demo
+cd demo
+chmod 500 demo
+touch a.txt
+-->>> permision non accordée
+
+1.1.3
+il faut que j'ai les droits en x sur tous les repo de la chaine /a/b/c/d
+mkdir a
+chmod 700 a
+mkdir a/b
+chmod 600 b
+mkdir a/b/c
+--->>>>> permission non accordée
+1.1.7
+on met un sticky bit sur un repo qui a ou non un droit en x
+s'il y a déjà un x, le sticky sera t si pas de x, sticky bit sera T
+chmod 1776 TMP
+ll
+--->>>> il y a T sur TMP
+chmod 1777 TMP
+ll
+---->>>>> il y a t sur TMP
+ POST SCRIPTUM : pour copier un fichier, il faut le droit de lecture du fichier et droit d'écriture dans le repo
+
+
+1.2 Liens
+1.2.1
+1.2.2 ex2 et exemple sont le meme fichier sur le disque car ils ont les memes caractéri
+stiques
+option dans le ls -la pour afficher les numeros de inoeud
+
+1.2.3 on a pas les droits admin et l'utilisateur
+1.2.4
+
